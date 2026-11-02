@@ -36,10 +36,10 @@ export default function ScheduleClient() {
         {/* <div className="alert alert-success mb-4" role="alert">
           wdawdadawdawdawdw
         </div> */}
-        <div className="d-flex justify-content-end">
+        <div className="d-flex flex-column flex-sm-row justify-content-sm-end gap-2 mb-3">
           <button
             type="button"
-            className="btn btn-primary mx-2 d-inline-flex align-items-center gap-1"
+            className="btn btn-primary d-inline-flex align-items-center justify-content-center gap-1"
             data-bs-toggle="modal"
             data-bs-target="#addSchedule"
           >
@@ -47,15 +47,15 @@ export default function ScheduleClient() {
           </button>
           <button
             type="button"
-            className="btn btn-outline-secondary d-inline-flex align-items-center gap-1"
+            className="btn btn-outline-secondary d-inline-flex align-items-center justify-content-center gap-1"
             data-bs-toggle="modal"
             data-bs-target="#addSubjectSchedule"
           >
             <Plus size={18} /> ADD SUBJECT SCHEDULE
           </button>
         </div>
-        <div className="row g-4">
-          <table className="table table-hover">
+        <div className="table-responsive">
+          <table className="table table-hover align-middle text-nowrap">
             <thead>
               <tr>
                 <th className="col">SECTION</th>
@@ -112,7 +112,7 @@ export default function ScheduleClient() {
         aria-labelledby="viewScheduleLabel"
         aria-hidden="true"
       >
-        <div className="modal-dialog modal-dialog-centered modal-lg">
+        <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg modal-fullscreen-sm-down">
           <div className="modal-content">
             <div className="modal-header">
               <h1 className="modal-title fs-5" id="viewScheduleLabel">
@@ -120,84 +120,86 @@ export default function ScheduleClient() {
               </h1>
             </div>
             <div className="modal-body">
-              <table className="table table-hover">
-                <thead>
-                  <tr>
-                    <th>SUBJECT CODE</th>
-                    <th> SUBJECT NAME</th>
-                    <th>DAY</th>
-                    <th>TIME</th>
-                    <th>ROOM</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>26365</td>
-                    <td>ENGLISH 7</td>
-                    <td>MWF</td>
-                    <td>7:00 - 8:00 AM</td>
-                    <td>MDP 102</td>
-                  </tr>
-                  <tr>
-                    <td>26365</td>
-                    <td>ENGLISH 7</td>
-                    <td>MWF</td>
-                    <td>7:00 - 8:00 AM</td>
-                    <td>MDP 102</td>
-                  </tr>
-                  <tr>
-                    <td>26365</td>
-                    <td>ENGLISH 7</td>
-                    <td>MWF</td>
-                    <td>7:00 - 8:00 AM</td>
-                    <td>MDP 102</td>
-                  </tr>
-                  <tr>
-                    <td>26365</td>
-                    <td>ENGLISH 7</td>
-                    <td>MWF</td>
-                    <td>7:00 - 8:00 AM</td>
-                    <td>MDP 102</td>
-                  </tr>
-                  <tr>
-                    <td>26365</td>
-                    <td>ENGLISH 7</td>
-                    <td>MWF</td>
-                    <td>7:00 - 8:00 AM</td>
-                    <td>MDP 102</td>
-                  </tr>
-                  <tr>
-                    <td>26365</td>
-                    <td>ENGLISH 7</td>
-                    <td>MWF</td>
-                    <td>7:00 - 8:00 AM</td>
-                    <td>MDP 102</td>
-                  </tr>
-                  <tr>
-                    <td>26365</td>
-                    <td>ENGLISH 7</td>
-                    <td>MWF</td>
-                    <td>7:00 - 8:00 AM</td>
-                    <td>MDP 102</td>
-                  </tr>
-                  <tr>
-                    <td>26365</td>
-                    <td>ENGLISH 7</td>
-                    <td>MWF</td>
-                    <td>7:00 - 8:00 AM</td>
-                    <td>MDP 102</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div className="modal-footer">
-              <button
-                type="button"
-                className="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
+              <div className="table-responsive">
+                <table className="table table-hover text-nowrap">
+                  <thead>
+                    <tr>
+                      <th>SUBJECT CODE</th>
+                      <th> SUBJECT NAME</th>
+                      <th>DAY</th>
+                      <th>TIME</th>
+                      <th>ROOM</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>26365</td>
+                      <td>ENGLISH 7</td>
+                      <td>MWF</td>
+                      <td>7:00 - 8:00 AM</td>
+                      <td>MDP 102</td>
+                    </tr>
+                    <tr>
+                      <td>26365</td>
+                      <td>ENGLISH 7</td>
+                      <td>MWF</td>
+                      <td>7:00 - 8:00 AM</td>
+                      <td>MDP 102</td>
+                    </tr>
+                    <tr>
+                      <td>26365</td>
+                      <td>ENGLISH 7</td>
+                      <td>MWF</td>
+                      <td>7:00 - 8:00 AM</td>
+                      <td>MDP 102</td>
+                    </tr>
+                    <tr>
+                      <td>26365</td>
+                      <td>ENGLISH 7</td>
+                      <td>MWF</td>
+                      <td>7:00 - 8:00 AM</td>
+                      <td>MDP 102</td>
+                    </tr>
+                    <tr>
+                      <td>26365</td>
+                      <td>ENGLISH 7</td>
+                      <td>MWF</td>
+                      <td>7:00 - 8:00 AM</td>
+                      <td>MDP 102</td>
+                    </tr>
+                    <tr>
+                      <td>26365</td>
+                      <td>ENGLISH 7</td>
+                      <td>MWF</td>
+                      <td>7:00 - 8:00 AM</td>
+                      <td>MDP 102</td>
+                    </tr>
+                    <tr>
+                      <td>26365</td>
+                      <td>ENGLISH 7</td>
+                      <td>MWF</td>
+                      <td>7:00 - 8:00 AM</td>
+                      <td>MDP 102</td>
+                    </tr>
+                    <tr>
+                      <td>26365</td>
+                      <td>ENGLISH 7</td>
+                      <td>MWF</td>
+                      <td>7:00 - 8:00 AM</td>
+                      <td>MDP 102</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className="modal-footer">
+                <button
+                  type="button"
+                  className="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -211,7 +213,7 @@ export default function ScheduleClient() {
         aria-labelledby="editScheduleLabel"
         aria-hidden="true"
       >
-        <div className="modal-dialog modal-dialog-centered modal-lg">
+        <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable mod  al-lg modal-fullscreen-sm-down">
           <div className="modal-content">
             <div className="modal-header">
               <h1 className="modal-title fs-5" id="editScheduleLabel">
@@ -310,7 +312,7 @@ export default function ScheduleClient() {
         aria-labelledby="addScheduleLabel"
         aria-hidden="true"
       >
-        <div className="modal-dialog modal-dialog-centered modal-xl">
+        <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl modal-fullscreen-sm-down">
           <div className="modal-content">
             <div className="modal-header">
               <h1 className="modal-title fs-5" id="addScheduleLabel">
@@ -330,32 +332,34 @@ export default function ScheduleClient() {
                   />
                 </div>
                 <div className="row g-4">
-                  <label htmlFor="subjectSchedule" className="form-label">
-                    Assigned Subject Schedule
-                  </label>
-                  <select
-                    id="subjectSchedule"
-                    multiple
-                    size={8}
-                    className="form-select"
-                    value={selected}
-                    onChange={(e) =>
-                      setSelected(
-                        Array.from(e.target.selectedOptions, (o) => o.value),
-                      )
-                    }
-                  >
-                    {schedules.map((s) => (
-                      <option key={s.value} value={s.value}>
-                        {s.label}
-                      </option>
-                    ))}
-                  </select>
-                  <div className="form-text">
-                    Hold <code>Ctrl</code> to select multiple.
+                  <div className="col-12 col-md-7">
+                    <label htmlFor="subjectSchedule" className="form-label">
+                      Assigned Subject Schedule
+                    </label>
+                    <select
+                      id="subjectSchedule"
+                      multiple
+                      size={8}
+                      className="form-select"
+                      value={selected}
+                      onChange={(e) =>
+                        setSelected(
+                          Array.from(e.target.selectedOptions, (o) => o.value),
+                        )
+                      }
+                    >
+                      {schedules.map((s) => (
+                        <option key={s.value} value={s.value}>
+                          {s.label}
+                        </option>
+                      ))}
+                    </select>
+                    <div className="form-text">
+                      Hold <code>Ctrl</code> to select multiple.
+                    </div>
                   </div>
 
-                  <div className="col-md-6">
+                  <div className="col-12 col-md-5">
                     <label className="form-label">
                       Selected Schedules{" "}
                       <span className="badge text-bg-secondary">
@@ -424,7 +428,7 @@ export default function ScheduleClient() {
         aria-labelledby="addSubjectScheduleLabel"
         aria-hidden="true"
       >
-        <div className="modal-dialog modal-dialog-centered modal-lg">
+        <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl modal-fullscreen-sm-down  ">
           <div className="modal-content">
             <div className="modal-header">
               <h1 className="modal-title fs-5" id="addSubjectScheduleLabel">
